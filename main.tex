@@ -1,0 +1,34 @@
+\documentclass{report}
+\usepackage{graphicx, etoolbox, fancyhdr, xfp, hyperref, multicol, float, inputenc,
+    wrapfig, lastpage}
+\usepackage{fontspec}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage[Glenn]{fncychap}
+\usepackage[a4paper,margin=0.75in]{geometry}
+\usepackage{command}
+
+\pagestyle{fancy}
+\lhead{\Large\textunderscore theslime016}
+\cfoot{\Large\thepage\ of \blue{\pageref{LastPage}}}
+\tcbuselibrary{many}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan
+}\urlstyle{same}
+
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+\addtolength{\topmargin}{-6pt}
+\setlength{\headheight}{32pt}
+
+\author{\Huge \textit{NoTimer}}
+\date{}
+
+\begin{document}
+\Large
+\setmainfont{SourceCodePro-MediumIt.otf}
+Hello World
+\end{document}

@@ -1,0 +1,45 @@
+\newcommand{\newcolbox}[2]{
+    \begin{tcolorbox}[
+        enhanced,
+        frame style image=images/background.png,
+        opacityback=0,
+        opacitybacktitle=0,
+        fonttitle=\bfseries,
+        title=#1]
+        #2
+    \end{tcolorbox}
+}
+\newcommand{\colbox}[2]{
+    \tcbox[
+        enhanced,
+        frame style image=images/background.png,
+        opacityback=0,
+        opacitybacktitle=0,
+        fonttitle=\bfseries,
+        title=#1]{#2}
+}
+
+\newcommand{\blankcolbox}[2]{
+    \begin{tcolorbox}[
+        enhanced,
+        attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},
+        colframe=blue!75!black,
+        colback=white,
+        colbacktitle=white,
+        coltitle=blue!70!white,
+        title=#1,
+        fonttitle=\bfseries,
+        boxed title style={size=small,colframe=black}]
+        #2
+    \end{tcolorbox}
+}
+
+\newcommand{\udsc}[1]{$_{\text{#1}}$}
+\newcommand{\red}[1]{{\color{red} #1}}
+\newcommand{\blue}[1]{{\color{blue} #1}}
+\newcommand{\yellow}[1]{{\color{yellow} #1}}
+\newcommand{\white}[1]{{\color{white} #1}}
+\newcommand{\green}[1]{{\color{PineGreen} #1}}
+\newcommand{\link}[3]{{\color{#3}\href{#1}{#2}}}
+\newcommand{\linkurl}[2]{{\color{#2}\url{#1}}}
+\newcommand{\bs}{\textbf{/}}
