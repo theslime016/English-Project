@@ -40,12 +40,10 @@
 \newcommand{\yellow}[1]{{\color{yellow} #1}}
 \newcommand{\white}[1]{{\color{white} #1}}
 \newcommand{\green}[1]{{\color{PineGreen} #1}}
-\newcommand{\link}[3]{{\color{#3}\href{#1}{#2}}}
-\newcommand{\linkurl}[2]{{\color{#2}\url{#1}}}
-\newcommand{\bs}{\textbf{/}}
+\newcommand{\itembf}[1]{\item \textbf{#1}}
 \newcommand{\preamble}[2]{
-    \rhead{\Large #1}
-    \title{\Huge \textbf{#2}}
+    \title{\Huge \textbf{#1}}
+    \rhead{\Large #2}
     \maketitle
     \tableofcontents
 }
