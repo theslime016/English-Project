@@ -1,7 +1,7 @@
 \newcommand{\newcolbox}[2]{
     \begin{tcolorbox}[
         enhanced,
-        frame style image=project-folders/images/background.png,
+        frame style image=background.png,
         opacityback=0,
         opacitybacktitle=0,
         fonttitle=\bfseries,
@@ -12,7 +12,7 @@
 \newcommand{\colbox}[2]{
     \tcbox[
         enhanced,
-        frame style image=project-folders/images/background.png,
+        frame style image=background.png,
         opacityback=0,
         opacitybacktitle=0,
         fonttitle=\bfseries,
@@ -42,7 +42,7 @@
 \newcommand{\green}[1]{{\color{PineGreen} #1}}
 \newcommand{\itembf}[1]{\item \textbf{#1}}
 \newcommand{\List}{\input{List.tex}}
-\newcommand{\Master}[1]{\input{project-folders/#1/Master.tex}}
+\newcommand{\Master}[2]{\input{project-folders/#1/#2/Master.tex}}
 \newcommand{\preamble}[2]{
     \title{\Huge \textbf{#1}}
     \rhead{\Large #2}
